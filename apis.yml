@@ -1,7 +1,28 @@
 aid: parting
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/parting.png
 name: Parting
-description: Parting is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Parting operates parting.com, a consumer-facing funeral-home and cremation
+  price-comparison platform that indexes more than 15,000 funeral homes and
+  mortuaries across all 50 U.S. states, letting families research locations,
+  photos, reviews, and pricing and contact providers directly. Founded in 2015
+  and based in Los Angeles, the company also publishes Parting Pro
+  (partingpro.com), funeral-home arrangement and cremation software with
+  third-party integrations to Passare, Keeper, and QuickBooks. As of this
+  enrichment pass Parting exposes no public developer API, OpenAPI/spec surface,
+  SDKs, or developer portal; this profile captures its public web presence and
+  a domain-security probe.
 url: https://raw.githubusercontent.com/api-evangelist/parting/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Funeral Services
+- Death Care
+- Cremation
+- Directory
+- Price Comparison
+- Consumer
+- Los Angeles
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/parting-domain-security.yml
 - type: Website
   url: https://parting.com
+- type: Blog
+  url: https://www.parting.com/blog/
+- type: PrivacyPolicy
+  url: https://www.parting.com/legal/privacy/
+- type: Support
+  url: https://www.parting.com/faq/
+- type: About
+  url: https://www.parting.com/about-us
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
